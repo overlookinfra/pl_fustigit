@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "fustigit"
+require "pl_fustigit"
 
 describe URI do # rubocop:disable Metrics/BlockLength
   @git_repos = JSON.parse(fixture("formats.json"))

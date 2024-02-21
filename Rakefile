@@ -5,7 +5,7 @@ require "bundler/gem_tasks"
 require "rake/testtask"
 require "rubocop/rake_task"
 
-desc "Test fustigit"
+desc "Test pl_fustigit"
 namespace :test do
   Rake::TestTask.new(:spec) do |test|
     test.libs << "spec"
@@ -14,7 +14,7 @@ namespace :test do
     test.warning = false
   end
 
-  desc "Test fustigit and calculate test coverage"
+  desc "Test pl_fustigit and calculate test coverage"
   task :coverage do
     ENV["COVERAGE"] = "true"
     Rake::Task["test:spec"].invoke

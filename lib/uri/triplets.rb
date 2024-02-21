@@ -60,10 +60,10 @@ end
 # they're passed.
 module TripletInterruptus
   # Determine if a string can be teased apart into URI-like components
-  TI_TRIPLET = %r{\A(?:(?<userinfo>.+)@+)?(?<host>[\w.-]+):(?<path>.*)\z}.freeze
+  TI_TRIPLET = %r{\A(?:(?<userinfo>.+)@+)?(?<host>[\w.-]+):(?<path>.*)\z}
 
   # Determine if a string is prefixed with a URI scheme like http:// or ssh://
-  TI_SCHEME = %r{\A(?:(?<scheme>[a-z]+)://)}.freeze
+  TI_SCHEME = %r{\A(?:(?<scheme>[a-z]+)://)}
 
   def parse(uri)
     return build_triplet(uri) if triplet?(uri)
