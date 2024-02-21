@@ -11,6 +11,9 @@ AllCops:
     - 'spec/fixtures/**/*'
     - vendor/bundle/**/*
 
+Gemspec/RequireMFA:
+  Enabled: false
+
 Layout/LineLength:
   Enabled: false
 
