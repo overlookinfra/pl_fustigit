@@ -19,5 +19,4 @@ Gem::Specification.new do |gem|
   gem.require_path = "lib"
 
   gem.files = Dir["lib/**/*.rb", "CHANGELOG.md", "README.md", "LICENSE"]
-  gem.metadata["rubygems_mfa_required"] = "true"
 end
