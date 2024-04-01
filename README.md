@@ -1,3 +1,8 @@
+## Archive Notice
+
+This fork of mkcern/fustigit was a short experiment which is no longer used nor
+maintained.
+
 ## Fustigit: gorram Git addresses
 
 <dl>
